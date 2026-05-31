@@ -9,6 +9,7 @@ import Checkout from './pages/Checkout'
 import { Favoritos, MisPedidos } from './pages/Extra'
 import './index.css'
 
+// v3
 export default function App() {
   return (
     <AuthProvider>
