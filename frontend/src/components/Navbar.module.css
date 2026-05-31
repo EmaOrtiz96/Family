@@ -1,0 +1,37 @@
+.nav{position:fixed;top:0;left:0;right:0;z-index:100;display:flex;align-items:center;justify-content:space-between;padding:1rem 3rem;transition:all .4s;}
+.scrolled{background:rgba(255,255,255,.95);backdrop-filter:blur(20px);border-bottom:1px solid rgba(0,0,0,.06);box-shadow:0 2px 20px rgba(0,0,0,.06);}
+.logo{display:flex;align-items:center;gap:.8rem;}
+.logo img{width:48px;height:48px;border-radius:50%;object-fit:cover;}
+.logoFallback{width:48px;height:48px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--cyan));align-items:center;justify-content:center;font-weight:800;font-size:1rem;color:white;}
+.logoText{display:flex;flex-direction:column;}
+.logoName{font-family:var(--font-d);font-size:1.3rem;font-weight:700;background:linear-gradient(135deg,var(--pink),var(--purple));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;}
+.logoSub{font-size:.58rem;font-weight:600;letter-spacing:.12em;text-transform:uppercase;color:var(--gray);}
+.links{display:flex;gap:2rem;list-style:none;}
+.links a{font-size:.78rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;color:var(--dark);transition:color .3s;}
+.links a:hover{color:var(--pink);}
+.actions{display:flex;gap:.6rem;align-items:center;}
+.iconBtn{background:none;border:none;font-size:1.1rem;padding:.3rem;transition:transform .2s;}
+.iconBtn:hover{transform:scale(1.2);}
+.searchWrap{position:relative;}
+.searchBox{position:absolute;right:0;top:calc(100% + .5rem);display:flex;background:white;border:2px solid var(--pink);overflow:hidden;min-width:260px;box-shadow:0 8px 24px rgba(232,121,160,.2);border-radius:8px;}
+.searchBox input{flex:1;padding:.55rem .9rem;border:none;font-family:var(--font-b);font-size:.85rem;outline:none;}
+.searchBox button{padding:.55rem .9rem;background:var(--pink);color:white;border:none;font-size:.9rem;font-weight:700;}
+.cartBtn{background:white;border:2px solid var(--border);padding:.45rem .9rem;display:flex;align-items:center;gap:.4rem;color:var(--dark);transition:all .3s;border-radius:8px;font-size:.9rem;font-weight:700;position:relative;box-shadow:0 2px 8px rgba(0,0,0,.05);}
+.cartBtn:hover{border-color:var(--pink);transform:translateY(-2px);}
+.badge{background:var(--pink);color:white;width:20px;height:20px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:.62rem;font-weight:800;}
+.loginBtn{font-size:.75rem;font-weight:700;letter-spacing:.08em;text-transform:uppercase;padding:.5rem 1.2rem;border:2px solid var(--dark);color:var(--dark);transition:all .3s;border-radius:8px;}
+.loginBtn:hover{background:var(--dark);color:white;}
+.userMenu{position:relative;}
+.userBtn{display:flex;align-items:center;gap:.5rem;background:none;border:2px solid var(--border);padding:.35rem .8rem;color:var(--dark);transition:all .3s;border-radius:8px;}
+.userBtn:hover{border-color:var(--pink);}
+.avatar{width:26px;height:26px;border-radius:50%;object-fit:cover;}
+.initial{width:26px;height:26px;border-radius:50%;background:linear-gradient(135deg,var(--pink),var(--purple));display:flex;align-items:center;justify-content:center;font-size:.75rem;font-weight:800;color:white;}
+.uname{font-size:.78rem;font-weight:700;}
+.dropdown{position:absolute;right:0;top:calc(100% + .4rem);background:white;border:2px solid var(--border);min-width:210px;z-index:200;box-shadow:0 8px 30px rgba(0,0,0,.1);border-radius:12px;overflow:hidden;}
+.dropHead{padding:.9rem 1rem;border-bottom:1px solid var(--border);background:var(--light);}
+.dropName{font-weight:700;color:var(--dark);font-size:.9rem;}
+.dropEmail{font-size:.7rem;color:var(--gray);margin-top:.1rem;}
+.adminTag{display:inline-block;margin-top:.3rem;font-size:.58rem;font-weight:800;letter-spacing:.1em;text-transform:uppercase;background:var(--pink);color:white;padding:.15rem .55rem;border-radius:4px;}
+.dropItem{display:block;width:100%;text-align:left;padding:.65rem 1rem;background:none;border:none;font-family:var(--font-b);font-size:.8rem;font-weight:600;color:var(--dark);transition:background .2s;}
+.dropItem:hover{background:var(--light);color:var(--pink);}
+@media(max-width:900px){.nav,.scrolled{padding:.8rem 1.5rem;}.links{display:none;}}
