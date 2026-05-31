@@ -1,6 +1,4 @@
-
-
-const BASE = import.meta.env.VITE_API_URL || 'https://family-production-5fb1.up.railway.app'
+const BASE = 'https://family-copy-production.up.railway.app'
 const tok = () => localStorage.getItem('familyprint_token')
 
 async function req(path, opts={}) {
