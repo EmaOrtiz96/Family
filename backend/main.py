@@ -7,7 +7,7 @@ import os
 app = FastAPI(title="FamilyPrint API v1", version="1.0.0")
 
 app.add_middleware(CORSMiddleware,
-    allow_origins=["https://familyprint.vercel.app","http://localhost:5173","http://localhost:3000"],
+    allow_origins=["https://family-olive-iota.vercel.app","https://familyprint.vercel.app","http://localhost:5173","http://localhost:3000"],
     allow_credentials=True, allow_methods=["*"], allow_headers=["*"])
 
 os.makedirs("uploads", exist_ok=True)
